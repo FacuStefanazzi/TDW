@@ -1,0 +1,181 @@
+/* =============================
+   1. Reset de Estilos o Normas Globales
+   ============================= */
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+/* =============================
+   2. Estilos Generales para Etiquetas HTML
+   ============================= */
+
+/* Encabezados */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #0e0d0d;
+    font-weight: 700;
+}
+
+ /*Párrafos*/ 
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    /*color: #0e0d0d;*/
+    color: hsl(0, 0%, 75%);
+    font-weight: 500;
+}
+
+ul{
+    list-style: none;
+}
+/*
+a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}*/
+/* =============================
+   3. Clases Comunes
+   ============================= */
+
+
+   
+/* =============================
+   Header
+   ============================= */
+header{
+    display: flex;
+    flex-wrap: wrap;/* permite que los items toman el ancho definido y loq ue no entran en la linea caigan*/
+    height: 75x;
+    justify-content: space-between;
+    /*background-color: rgb(49, 49, 49);     */
+}
+.header-left {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding-left: 15px;
+    gap: 20px;
+  }
+.logo{ 
+    height: auto;
+    padding: 10px 40px ;
+    /*flex-grow: 1; va a ocupar todo el ancho disponible*/
+}
+
+header nav ul{
+    display: flex;
+    column-gap: 5px;
+    
+}
+.nav a {
+    margin: 0 10px;
+    color: #101010;
+    text-decoration: none;
+
+}
+  
+.header-right {
+    display: flex;
+    gap: 20px; /* espacio entre los elementos de la derecha */
+    align-items: center;
+    padding-right: 15px;
+  }
+  
+.right-item {
+    flex: 1; /*ocupa el espacio disponible*/
+  }
+
+  .boton-login{
+    background-color: transparent; /* Fondo transparente */
+    color: hsl(0, 0%, 75%);
+    padding: 10px 20px;
+    border: none; /* Sin bordes */
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+
+  .boton-registrar{
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; 
+    cursor: pointer;
+    font-size: 16px;
+    
+  }
+  
+  /* Efecto hover */
+  button:hover {
+    background-color: hsl(180, 66%, 40%); /* Un cyan ligeramente más oscuro */
+    border-radius: 20px;
+  }  
+
+
+
+/**********************************************
+                    MAIN 
+**********************************************/
+.main-top{
+  display: flex;
+  flex-wrap: wrap;/* permite que los items toman el ancho definido y loq ue no entran en la linea caigan*/
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
+}
+
+.main-top-left{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-start;
+  padding: 50px;
+
+}
+
+.main-top-left h1{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.main-top p{
+  
+  margin-bottom: 25px;
+
+}
+
+.main-boton{
+  background-color: hsl(180, 66%, 49%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  
+  }
+
+.main-top-rigth{
+  display: flex;
+  /*flex: 1;*/
+  flex-wrap: wrap;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center;
+
+ 
+}
+.main-top-rigth img {
+  width: 100%;  /* La imagen se adapta al 100% del contenedor */
+  height: 100%;  /* La imagen se adapta al 100% del contenedor */
+  object-fit: cover;  /* La imagen se ajusta sin perder proporción y cubre el contenedor */
+}
+
