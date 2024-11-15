@@ -9,6 +9,8 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
+    /*display: flex;
+    flex-direction: column;*/
   }
 /* =============================
    2. Estilos Generales para Etiquetas HTML
@@ -45,7 +47,7 @@ a{
    ============================= */
 
 
-   
+
 /* =============================
    Header
    ============================= */
@@ -86,6 +88,7 @@ header nav ul{
     gap: 20px; /* espacio entre los elementos de la derecha */
     align-items: center;
     padding-right: 15px;
+    
   }
   
 .right-item {
@@ -124,12 +127,17 @@ header nav ul{
 /**********************************************
                     MAIN 
 **********************************************/
+
+ /* TOP */
+/* main{
+ display: flex;
+}*/
 .main-top{
   display: flex;
   flex-wrap: wrap;/* permite que los items toman el ancho definido y loq ue no entran en la linea caigan*/
   justify-content: space-between;
   align-items: center;
-  height: 500px;
+ /* height: 500px;*/
 }
 
 .main-top-left{
@@ -170,12 +178,55 @@ header nav ul{
   flex-wrap: wrap;
   justify-content: center; /* Centra la imagen horizontalmente */
   align-items: center;
-
+  /*flex: 1;
+  min-height: 300px;*/
  
 }
 .main-top-rigth img {
   width: 100%;  /* La imagen se adapta al 100% del contenedor */
-  height: 100%;  /* La imagen se adapta al 100% del contenedor */
+   height: 100%;/*  La imagen se adapta al 100% del contenedor */
   object-fit: cover;  /* La imagen se ajusta sin perder proporción y cubre el contenedor */
+  /*display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;*/
 }
 
+ /* main link */
+.main-link-container{
+  position: relative;
+
+}
+
+.main-link{
+ /* display: flex;
+  flex-wrap: wrap;*/
+  background-color: hsl(257, 27%, 26%) ;
+  padding: 20px;
+  text-align: center;
+
+  position: absolute;
+  
+  transform: translate(50%, -50%);
+  height: 50px;
+  width: 500px;
+
+  border-radius: 5px;
+
+}
+  /* main mid -  texto y tarjetas */
+
+  .main-mid{
+    display: flex;
+    background-color: hsl(0, 0%, 75%);
+    height: 100px;
+  }
+   /* main bottom */
+
+
+
+
+
+/**********************************************
+                    FOOTER
+**********************************************/   
