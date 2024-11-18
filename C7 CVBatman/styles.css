@@ -1,0 +1,74 @@
+header {
+    background-color: #E6E6E6;
+}
+.batman {
+
+    text-align: center;
+    
+}
+img {
+    display: inline-block;
+}
+/*Clase de Caja gris que contiene el titulo y es un poco mas grande que las otras*/
+.caja1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #005677;
+    text-align: center;
+    padding: 20px;
+    
+    background-color:#C4C4C4 ;
+    /*width: 1440px;*/
+    height: 60px;
+    top: 188px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+/*Clase de Caja blanca para rellenar datos*/
+.caja2{
+    background-color: white;
+    height: 160px;
+}
+/*Clase de caja blanca que contiene Sub-Titulos de la seccion*/
+.caja3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #005677; 
+    
+    background-color:#C4C4C4 ;
+    height: 40px;
+    }
+.caja3 h2{
+    padding: 5px;
+    padding-left: 20px;
+}
+
+
+ul, p, dl {
+    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+dd {
+    margin-left: 75px;
+}
+
+/* footer */
+.pie {
+   
+    height: 37px;
+    top: 987px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: blue;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    padding: 40px;
+    text-align: center;
+   
+}
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    align-items: center;
+}
