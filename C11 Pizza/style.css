@@ -1,0 +1,182 @@
+/* =============================
+   1. Reset de Estilos o Normas Globales
+   ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =============================
+   2. Estilos Generales para Etiquetas HTML
+   ============================= */
+
+   html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Encabezados */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #0e0d0d;
+    font-weight: 700;
+}
+
+/* Párrafos */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0e0d0d;
+    font-weight: 400;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+/* =============================
+   3. Clases Comunes
+   ============================= */
+
+.conteiner-header{
+    display: flex;
+    flex-wrap: wrap;/* permite que los items toman el ancho definido y loq ue no entran en la linea caigan*/
+    height: 100px;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    
+}
+.logo{
+    
+    background-color: rgb(158, 226, 226);
+    height: 100px;
+    padding: 10px;
+    /*flex-grow: 1; va a ocupar todo el ancno disponible*/
+}
+.menu {
+    display: flex;/*con flex los elementos van a tratar de entrar todos en una misma linea*/
+    width: 284px;
+    background-color: rgb(7, 7, 7);
+    
+}
+
+header nav ul{
+    display: flex;
+    column-gap: 13px;
+}
+
+/******    MAIN      ********/
+main {
+    background-color: antiquewhite;
+    flex: 1; /* Toma el espacio vertical disponible */
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+main section{
+    display: flex;
+    padding: 35px 19px ;
+    gap: 5px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.main-izq, .main-der {
+    /*flex: 1;  Permite que cada sección ocupe el espacio disponible */
+    height: 350px; /* Mantén la altura deseada */
+    width:492px ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.main-izq{
+    display: flex;
+    background-image: url('imagenes/delivery1.jpg');
+    background-size: cover; /* Hace que la imagen se ajuste mejor */
+    background-position: center;
+    width: 100%; 
+    max-width: 492px; 
+    flex-grow: 1;
+
+}
+.main-izq h2{
+    color: red;
+    /*padding: 20px 20px;*/
+    padding: 1rem;
+
+    text-align: center;
+}
+.main-izq span{
+    color: white;
+}
+
+/*************************************/
+/***************************************/
+.main-der{
+    display: flex;
+
+    background-color: white;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%; 
+    max-width: 492px; 
+    background-color: white;
+    flex-grow: 1;
+    padding: 1rem; 
+    
+    
+}
+.main-der h2{
+    color: red;
+    display: flex;
+    justify-content: center; 
+    padding: 26px ;
+    flex-grow: 0;            
+}
+
+.main-der .top5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 75px;
+}
+.main-der .top5 ol li{
+    padding: 5px;
+    font-weight: bold;
+}
+
+
+/*      FOOTER                 */
+footer{
+    display: flex;
+    background-color: #0e0d0d;
+    box-shadow: 0px 4px 4px;
+    width: 100%;
+    padding: 15px;
+    justify-content:space-between;
+}
+footer ul{
+    padding: 5px 5px 0px 25px;
+}
+footer li{
+    padding: 5px;  
+}
+
+.footer-logo{
+    background-color: #0e0d0d;
+    height: 100px;
+    padding: 10px;
+}
