@@ -1,0 +1,383 @@
+/* =============================
+   1. Reset de Estilos o Normas Globales
+   ============================= */
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =============================
+   2. Estilos Generales para Etiquetas HTML
+   ============================= */
+
+/* Encabezados */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #0e0d0d;
+    font-weight: 700;
+}
+
+/* Párrafos */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0e0d0d;
+    font-weight: 400;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}
+/* =============================
+   3. Clases Comunes
+   ============================= */
+
+.header-top{
+    display: flex;
+    flex-wrap: wrap;/* permite que los items toman el ancho definido y loq ue no entran en la linea caigan*/
+    /*height: 75x;*/
+    justify-content: space-between;
+    background-color: black;      
+}
+
+.header-top span{
+    color: white;
+    padding: 10px 50px 10px 50px;
+}
+.header-bottom{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;      
+    background-color: rgb(255, 191, 0);
+   
+}
+
+.logo{
+    
+    height: auto;
+    padding: 10px 40px ;
+    
+}
+.menu {
+    display: flex;/*con flex los elementos van a tratar de entrar todos en una misma linea*/
+    width: 284px;
+    justify-content: center;
+    padding-right: 100px;   
+}
+
+header nav ul{
+    display: flex;
+    column-gap: 13px;
+    
+}
+
+/******    MAIN      ********/
+
+.main-top{
+    display: flex;
+    flex-wrap: wrap;/* permite que los items toman el ancho definido y loq ue no entran en la linea caigan*/
+    background-image: url(imagenes/slide.jfif);
+    height: 500px;
+
+    /*background-size: cover;*/
+    background-size: cover;
+    background-position: center; /* Centra la imagen */
+    justify-content: flex-end;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+   
+    padding: 20px;
+    border-radius: 10px; 
+}
+.hero-text h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.hero-text span{
+    color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+.hero-text button{
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px
+}
+
+/**********************************************
+MAIN CENTER
+**********************************************/
+
+
+.productos-destacados{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+.productos-destacados h2{
+    padding: 10px;
+    font-size: 40px;
+}
+
+.productos-destacados nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+
+.tarjetas {
+    display: flex;
+    justify-content: space-around;/*distribuye las tarjetas con espacio igual entre ellas*/
+    align-items: stretch; /*todas las tarjetas tengan la misma altura, si el contenido varía.*/
+    gap: 20px;
+    flex-wrap: wrap;/*ajusten en una nueva línea si el espacio disponible es insuficiente.*/
+  }
+
+  .tarjeta {
+    background-color: rgb(224, 221, 221);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    display: flex; 
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente el contenido */
+    
+    text-align: center; /* Centra el texto */
+  }
+
+  .tarjeta img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    padding-bottom: 5px;
+  }
+
+  .tarjeta p{
+    color: rgb(255, 146, 3);
+  }
+/**********************************************
+    formulario
+**********************************************/
+.formmain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+form h2{
+ color: darkgoldenrod;
+ padding: 20px;
+}
+
+.formmain input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 30%; 
+    background-color: #823d00; 
+    color: #ffffff; 
+    font-weight: 700;
+
+}
+input::placeholder {
+    color: #ffffff; /* Color del texto del placeholder */
+    font-style: italic; /* Opcional */
+}
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.formmain button {
+    padding: 10px 40px; /* Aumenta el relleno para agrandar el botón */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.formmain button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 20px; 
+}
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/**********************************************
+    FOOSTER
+**********************************************/
+
+footer{
+    
+    background-color: #ca6206;
+}
+.f-top{
+    background-color: #ffb90a;
+    display: flex;
+   /*  flex-wrap: wrap;permite que los items toman el ancho definido y loq ue no entran en la linea caigan*/
+    
+    justify-content: space-between;
+    color: white;
+    padding: 10px;
+    align-items: center;  
+
+}
+footer span{
+    font-weight: 700;
+    font-size: 30px;
+    
+}
+
+.f-bottom span{
+    font-size: 18px;
+}
+footer input{
+    width: 70%;
+    
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+    background-color: #823d00; /* Color de relleno */
+    color: #ffffff; /* Color del texto del input */
+    font-weight: 700;
+}
+footer button{
+    padding: 10px 10px; /* Aumenta el relleno para agrandar el botón */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.f-center{
+    display: flex;
+    justify-content: space-between;
+    background-color: #3A2108;
+}
+.f-bottom{
+    display: flex;
+    justify-content: center; /* Centra horizontal el contenido */
+    background-color: #000000;
+    color: white;      
+}
+
+/* Contact section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #3A2108;
+    padding: 10px 10px 10px 80px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.contact-item i {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.contact-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #BFBFBF;
+}
+
+.contact-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #BFBFBF;
+}
+.f-logo{
+    display: flex;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+}
+
+/**********************************************
+    MEDIA QUERIES
+**********************************************/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .main-center {
+        background-color: rgb(49, 182, 226);
+        
+
+    }
+
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    form {
+        background-color: rgb(49, 182, 226);
+    }
+}
+@media only screen and (max-width: 600px){
+    header nav ul{
+        display: flex;
+        column-gap: 13px;
+        flex-direction: column;
+        
+    }
+    .header-bottom{
+        display: flex;
+        flex-wrap: wrap;
+        height: 140px;
+        justify-content: space-between;
+        align-items: center;      
+        background-color: rgb(255, 191, 0);
+       
+    }
+}

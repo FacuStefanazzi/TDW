@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETSHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   <header>
+    <div class="header-top">
+        <span>Grandes ofertas en comederos</span>
+        <span>Español ▼ ARG$▼</span>
+    </div>
+    <div class="header-bottom">
+        <img class="logo" src="imagenes/Logo.png" alt="LOGO">
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Pets</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </div>
+   </header>
+   <main>
+    <section class="main-top">
+        <div class="hero-text">
+            <h2>¡Es un placer tenerte aquí!</h2>
+            <span>¡Comederos en descuento!</span>
+            <button>COMEDEROS</button>
+        </div>
+    </section>
+    <section class="main-center">
+        <div class="productos-destacados">
+            <img src="imagenes/pawprint 1.png" alt="">
+            <h2>Productos Destacados</h2>
+            <nav>
+                <ul>
+                    <li>Comederos ▼</li>
+                    <li>Accesorios ▼</li>
+                    <li>Comida</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <img src="imagenes/churrasco.png" alt="">
+                <span>Juguete Churrasquito</span>
+                <p>$150</p>
+            </div>
+            <div class="tarjeta"> 
+                <img src="imagenes/comedero.png" alt="">
+                <span>Comedero para perro</span>
+                <p>$250</p></div>
+            <div class="tarjeta">
+                <img src="imagenes/huesito.png" alt="">
+                <span>Juguete Huesito</span>
+                <p>$650</p>
+            </div>
+        </div>
+    </section>
+    
+    <section>  
+            <form action="#" method="post" class="formmain">
+                <h2>Contáctanos</h2>
+                <!--<label for="name">Nombre y Apellido:</label>-->
+                <input type="text" id="name" name="name" placeholder="Nombre y Apellido" required>
+
+                <!--<  <label for="email">Correo:</label>-->
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correro electronico" required>
+
+                <!--<<label for="phone">Teléfono:</label>-->
+                <input type="tel" id="phone" name="phone" placeholder="Telefono" required>
+
+                <div class="button-group">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Resetear</button>
+                </div>
+        </form>
+    </section>
+    <footer>
+       
+        <div class="f-top">
+            <div> 
+                <i class="fa fa-envelope"></i>
+                <span>Suscribete para mas novedades </span>
+            </div>
+
+            <form action="#">
+                <input type="email" placeholder="Ingresa tu correro electronico">
+                <button type="submit">Suscribete</button>
+            </form>
+        </div>
+        <div class="f-center">
+            <div class="contact-section">
+                <div class="contact-item">
+                    <i class="fa fa-map-marker"></i>
+                    <div class="contact-info">
+                        <h3>Localidad</h3>
+                        <p>Calle - provincia</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-phone"></i>
+                    <div class="contact-info">
+                        <h3>Teléfono</h3>
+                        <p>Número de teléfono</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-envelope"></i>
+                    <div class="contact-info">
+                        <h3>Correo Electrónico</h3>
+                        <p>Dirección de correo</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="f-logo"> 
+                <img class="logo" src="imagenes/Logo.png" alt="LOGO">
+            </div>   
+        </div>
+        <div class="f-bottom">
+            <span>Todos los derechos reservados FrontEnd</span>
+        </div>
+    </footer>
+   </main>
+</body>
+</html>
