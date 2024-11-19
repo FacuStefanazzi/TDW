@@ -1,0 +1,407 @@
+/* =============================
+   1. Reset de Estilos o Normas Globales
+   ============================= */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* =============================
+   2. Estilos Generales para Etiquetas HTML
+   ============================= */
+
+/* Encabezados */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: #0e0d0d;
+    font-weight: 400;
+}
+
+/* Párrafos */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0e0d0d;
+    font-weight: 400;
+}
+
+body {
+  
+
+  display: flex;
+  flex-direction: column; /* Hace que el contenido se organice verticalmente */
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  background-color: #ffffff; /* Color por defecto */
+  font-size: 16px;
+}
+
+header {
+  width: 100%; /* Ocupa todo el ancho disponible */
+   display: flex; /*Activa el modo flex para los elementos internos */
+  /*justify-content: space-between;  Espacio entre los elementos internos */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  flex-direction: column; /* Coloca los elementos uno debajo del otro */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Estilos para las divisiones internas */
+.headerUno, .headerDos {
+  flex: 1; /* Permite que cada div ocupe el mismo espacio */
+  text-align: center; /* Centra el texto en cada div */
+  width: 100%; /* Asegura que ocupen todo el ancho del header */
+}
+
+
+/* =============================
+   1. Clases Comunes
+   ============================= */
+
+.headerUno {
+    /* width: 100vw; */
+    height: 38px;
+    box-sizing: border-box;
+    background: #1CD1B0;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+    text-align: left;
+    padding: 10px;
+    
+}
+
+.headerDos {
+    height: 90px;
+    box-sizing: border-box;
+    background: #00669F;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #ffffff;
+    padding: 10px 0px 10px 20px;
+}
+
+.headerDos h1{
+  font-weight: 700;
+  font-size: 25px;
+  color: #ffffff;
+}
+.headerDos h1 i { 
+  color: #00ff80; /* Cambia el color del icono */
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+  font-size: 1.5em; /* Cambia el tamaño del icono */
+}
+
+
+.cards {
+  display: flex; /* Flexbox para manejar alineación */
+  flex-wrap: wrap; /* Permitir que las tarjetas bajen de línea */
+  gap: 30px; /* Espacio uniforme entre las tarjetas */
+  margin: 50px auto; /* Centrar el contenedor */
+  justify-content: center; /* Centrar horizontalmente */
+  padding: 0 16px;
+}
+
+.card {
+  
+  max-width: 300px; /* Ancho máximo para evitar tarjetas demasiado grandes */
+  background: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px 16px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.card-head{
+  position: relative;
+  height: 193px;
+}
+.corazon{
+  position: absolute;
+  top: 21px;
+  left: 17px;
+}
+.card-head .perfil-bat{
+position: absolute;
+top: 127px;
+left: 90px;
+border-radius: 100%;
+width: 128px; 
+height: 128px;
+}
+
+.card-head .imgfondo {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; /* Mantener proporción */
+}
+
+/*
+.card-head {
+  position: relative;
+  height: 193px;
+  background-color: #ddd; 
+}
+
+.card-head img {
+  width: 100%; 
+  height: 100%;
+  object-fit: cover; /* Mantener proporción 
+}*/
+/*
+.corazon {
+  position: absolute;
+  top: 21px;
+  left: 17px;
+  width: 40px; /* Tamaño fijo */
+ /* height: 40px;
+}*/
+/*
+.perfil-bat {
+  position: absolute;
+  top: 127px;
+  left: 50%;
+  transform: translateX(-50%); /* Centrar */
+ /* border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}*/
+
+.card-body {
+  
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-body h2 {
+  padding-top: 50px;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-body p {
+  font-size: 1rem;
+  color: #666;
+  flex: 1; /* Permitir que el texto ocupe espacio */
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #3e2ecc;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  
+}
+
+
+.btnmas{
+
+    background-color: #3e2ecc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    top: calc(50%); /* Centrado verticalmente */
+    right: 30px; 
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    
+}
+
+
+.plus-link {
+    font-size: 30px;  /* Ajusta el tamaño */
+    color: #ff0000;   /* Cambia el color a rojo (puedes elegir otro color) */
+    text-decoration: none;  /* Elimina el subrayado */
+    font-weight: bold;  /* Hazlo en negrita */
+    text-align: center;
+  }
+
+  .plus-link:hover {
+    color: #00ff00;  
+  }
+
+
+/*CLASES FOOTER*/
+.pie {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    /*height: 51px;*/
+    background: #00669F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+/* =============================
+   3. IDs Específicos
+   ============================= */
+    #pfooter {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        padding-top: 10px;
+        text-align: center;
+        color: #FFF9F9;
+        /*height: 10px;*/
+    }   
+
+
+    /* ======================================================
+        4. INDEX CREARHEROES
+   ========================================================== */
+
+
+   .grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  /* Dos columnas de igual tamaño */
+    gap: 20px;  /* Espacio entre las columnas y filas */
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #00669F;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+.grid-form h2{
+    grid-column: span 2;  /* Ocupa las dos columnas */
+    text-align: center;    /* Centra el texto */
+
+    color: #ffffff;
+    font-size: 30px;
+    
+}
+.grid-form span{
+    grid-column: span 2;  
+    grid-row: span 1;
+    text-align: center;    
+    color: #ffffff;
+    margin-top: -2%;        
+}
+.grid-form p{
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  select {
+    cursor: pointer;  
+  }
+
+.form-group.full-width {
+    grid-column: span 2;  /* Estas filas ocuparán las dos columnas */
+  }
+
+  label {
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 5px;
+  }
+
+
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"], 
+  textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  input[type="date"] {
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+   
+   
+  }
+
+
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #fbfdff;
+    
+  }
+
+/*******************/
+
+
+/* Tablets (pantallas de 768px a 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+      background-color: #0052a5; /* Cambia el fondo para tablets */
+  }
+  .card p{
+    font-size: 14px;
+  }
+}
+
+/* Celulares (pantallas menores a 768px) */
+@media (max-width: 767px) {
+  body {
+      background-color: #c9210e; 
+  }
+
+
+  .card p{
+    font-size: 12px;
+  }
+}
+
+
